@@ -88,6 +88,7 @@ public abstract class XDController<D extends BaseDefinition, A extends ResourceA
 	protected XDController(AbstractDeployer<D> deployer, A resourceAssemblerSupport) {
 		this.deployer = deployer;
 		this.resourceAssemblerSupport = resourceAssemblerSupport;
+		int a = 1;
 	}
 
 	protected ResourceDeployer<D> getDeployer() {
@@ -135,7 +136,7 @@ public abstract class XDController<D extends BaseDefinition, A extends ResourceA
 	}
 
 	/**
-	 * Request deployment of an existing definition resource. The definition must exist before deploying and is included 
+	 * Request deployment of an existing definition resource. The definition must exist before deploying and is included
 	 * in the path. A new deployment instance is created.
 	 *
 	 * @param name the name of an existing definition resource (job or stream) (required)
